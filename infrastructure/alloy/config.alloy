@@ -19,7 +19,7 @@ prometheus.scrape "app_metrics" {
 	targets = [
 		{"__address__" = "backend:3001", "job" = "backend", "service" = "shopmicro-backend"},
 		{"__address__" = "ml-service:3002", "job" = "ml-service", "service" = "shopmicro-ml-service"},
-		{"__address__" = "frontend:80", "job" = "frontend", "service" = "shopmicro-frontend"},
+		{"__address__" = "frontend:8080", "job" = "frontend", "service" = "shopmicro-frontend"},
 	]
 	scrape_interval = "15s"
 	metrics_path   = "/metrics"
